@@ -1,0 +1,42 @@
+<!--form handling-->
+            <form action="/api/lists" method="post" id="update_list">
+                <div class="new_list">
+                    <div class="form-group">
+                        <label for="nameList">สิ่งที่ต้องทำ</label>
+                        <input type="hidden" name="id" >
+                        <input type="text" name="nameList" placeholder="อาบน้ำน้องหมา">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateList" >วันที่ต้องทำ</label>
+                        <input type="text" name="dateList" placeholder="31/12/2555">
+                    </div>
+                    <div class="form-group">
+                        <label for="categoryList" >หมวดหมู่</label>
+                        <input type="text" name="categoryList" placeholder="น้องหมา">
+                    </div>
+
+                    <div class="form-group-radio-statusList">
+                        <label for="statusList" class="radio">สถานะ</label>
+                        <label for="radioID0" class="radio">
+                            <input type="radio" name="statusList" value="เสร็จ" id="radioID0" class="radio_input">
+                            <div class="radio_radio">
+                                <!--virtual element-->
+                            </div>
+                                เสร็จ
+                            </label>
+                        <label for="radioID1" class="radio">
+                            <input type="radio" name="statusList" value="ยังไม่เสร็จ" id="radioID1" class="radio_input">
+                            <div class="radio_radio">
+                                <!--virtual element-->
+                            </div>
+                                ยังไม่เสร็จ
+                            </label>
+                    </div>
+             
+                    <div class="form-group">
+                        <button type="submit" class="btn text-dark update">Save</button>
+                    </div>
+                </div>
+            </form>
+            <!--/form handling-->
+

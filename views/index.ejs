@@ -1,0 +1,40 @@
+<!--include header-->
+<%- include('include/header') %> 
+<!--/include header-->
+
+<!--Main Site-->
+<main id="site-main">
+    <div class="container">
+
+        <!--form handling-->
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>รายการที่</th>
+                        <th>สิ่งที่ต้องทำ</th>
+                        <th>วันที่ต้องทำ</th>
+                        <th>หมวดหมู่</th>
+                        <th>สถานะ</th>
+                        <th>แก้ไข / ลบ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--include show-->
+                    <%- include('include/show') %>
+                    <!--/include show-->
+                </tbody>
+            </table>
+        </form>
+        
+        <!--btn add list-->
+        <div class="box-nav d-flex-justify-between">
+            <a href="/add-list" class="border-shadow-add">
+                <i class="fa-solid fa-circle-plus"></i>
+            </a>
+        </div>
+        <!--/btn add list-->
+
+    </div>
+</main>
+<!--/Main Site-->

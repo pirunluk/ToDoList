@@ -1,0 +1,17 @@
+<% for(let i=0; i<lists.length; i++) { %> 
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= lists[i].nameList %></td>
+        <td><%= lists[i].dateList %></td>
+        <td><%= lists[i].categoryList %></td>
+        <td><%= lists[i].statusList %></td>
+        <td>
+            <a href="/update-list?id=<%= lists[i]._id %> " class="btn border-shadow update">
+                <span class="text-fa"><i class="fa-solid fa-pen-to-square"></i></span>
+            </a>
+            <a class="btn border-shadow delete" data-id="<%= lists[i]._id %> ">
+                <span class="text-fa"><i class="fa-solid fa-trash-can"></i></span>
+            </a>
+        </td>
+    </tr>
+<% } %> 
